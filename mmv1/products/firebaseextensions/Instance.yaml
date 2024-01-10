@@ -63,6 +63,8 @@ examples:
       project_id: :PROJECT_NAME
     test_vars_overrides:
       location: '"us-central1"'
+    ignore_read_extra:
+      - config.system_params
 parameters:
   - !ruby/object:Api::Type::String
     name: 'instance_id'

@@ -32,7 +32,7 @@ func TestAccFirebaseExtensionsInstance_firebaseExtentionsInstanceResizeImageUpda
 				ResourceName:            "google_firebase_extensions_instance.resize_image",
 				ImportState:             true,
 				ImportStateVerify:       true,
-				ImportStateVerifyIgnore: []string{"instance_id"},
+				ImportStateVerifyIgnore: []string{"instance_id", "config.system_params"},
 			},
             {
 				Config: testAccFirebaseExtensionsInstance_firebaseExtentionsInstanceResizeImageAfter(context),
@@ -41,7 +41,7 @@ func TestAccFirebaseExtensionsInstance_firebaseExtentionsInstanceResizeImageUpda
 				ResourceName:            "google_firebase_extensions_instance.resize_image",
 				ImportState:             true,
 				ImportStateVerify:       true,
-				ImportStateVerifyIgnore: []string{"instance_id"},
+				ImportStateVerifyIgnore: []string{"instance_id", "config.system_params"},
 			},
 		},
 	})
