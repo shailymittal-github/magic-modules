@@ -481,7 +481,6 @@ properties:
             description: |-
               The execution environment being used to host this Task.
             values:
-              - :EXECUTION_ENVIRONMENT_GEN1
               - :EXECUTION_ENVIRONMENT_GEN2
             default_from_api: true
           - !ruby/object:Api::Type::String
